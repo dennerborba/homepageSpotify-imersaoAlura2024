@@ -2,10 +2,6 @@ body{
     background-color: black;
 }
 
-h1{
-    color: white;
-}
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -240,4 +236,40 @@ h1{
     margin: 5px;
     padding: 8px;
     border-radius: 20px;
+}
+
+.footer .sign_up{
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 8px;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-image: linear-gradient(to right, #ae2996, #509bf5);
+    color: white;
+    padding: 18px;
+}
+
+.footer .sign_up .textPreview{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer .sign_up .textSignUp{
+    font-size: 14px;
+}
+
+.footer .sign_up .signUp_button{
+    margin-right: 60px;
+    border-radius: 20px;
+    border: 0;
+    padding: 16px;
+    width: 160px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer .sign_up .signUp_button:hover{
+    transform: scale(1.1);
 }

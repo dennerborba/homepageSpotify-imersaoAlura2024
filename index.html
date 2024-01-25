@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Início</title>
-    <link rel="icon" href="assets/icons/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="src/assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="src/styles/main-content.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
 </head>
-
 <body>
     <div class="sidebar">
         <nav class="sidebar__navigation">
             <div class="logo">
                 <a href="">
-                    <img src="./assets/icons/logo-spotify.png" alt="logo spotify">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="logo spotify">
                 </a>
             </div>
             <ul>
@@ -73,19 +74,50 @@
                 </button>
             </div>
         </div>
-        <section class="footer">
-            <footer class="sign_up">
-                <div>
-                    <span class="textPreview">Preview of Spotify</span>
-                <br/>
-                    <span class="textSignUp">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</span>
+    </div>
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="src/assets/icons/small-left.png" alt="seta_esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="src/assets/icons/small-right.png" alt="seta_direita">
+                    </button>
                 </div>
-                <div>
-                    <button class="signUp_button">Sign up for free</button>
+                <div class="header__search">
+                    <img src="src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="What do you want to listen to?">
                 </div>
-            </footer>
-        </section>
+
+                <div class="header__login">
+                    <button class="subscribe">Sign up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </nav>
+            <div class="header__content">
+               <div>
+                   <h1 class="title">Good evening</h1>
+                   <h2 class="subtitle">Browse all</h1>
+               </div>
+            <section>
+            </section>
+            </div>
+
+        </div>
+    </main>
+    <div class="footer">
+        <footer class="sign_up">
+            <div>
+                <p class="textPreview">Preview of Spotify</p>
+                <p class="textSignUp">Sign up to get unlimited songs and podcasts with occasional ads. No credit card
+                    needed.</p>
+            </div>
+            <div>
+                <button class="signUp_button">Sign up for free</button>
+            </div>
+        </footer>
     </div>
 </body>
-
 </html>
